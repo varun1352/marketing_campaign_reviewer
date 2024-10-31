@@ -17,6 +17,6 @@ This project deploys AI-driven agents from diverse demographic backgrounds to re
    pip install -r requirements.txt
    ```
 3. Run the project locally:
-```bash
-crewai run
-```
+   ```bash
+   crewai run
+   ```
