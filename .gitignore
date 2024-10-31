@@ -1,0 +1,8 @@
+__pycache__/
+.vscode/
+*.pyc
+*.log
+*.env
+*.DS_Store
+.env  # to keep API keys and environment variables private
+*.venv/  # virtual environment folder

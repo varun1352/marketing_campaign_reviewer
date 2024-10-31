@@ -1,0 +1,58 @@
+# Task configurations for MarketingCampaignReviewerCrew
+
+review_task:
+  description: >
+    Each agent reviews the campaign content and provides feedback based on demographic relevance.
+    The review should consider aspects such as appeal, cultural sensitivity, messaging clarity,
+    and inclusivity, given the current year is 2024.
+  expected_output: >
+    A structured feedback report that includes ratings and detailed comments across the following
+    categories: Content Appeal, Cultural Sensitivity, Messaging Clarity, and Inclusivity.
+    Formatted as markdown with the insights from each demographic-specific reviewer.
+  agent: young_adult_reviewer  # Example; specify a different agent for each demographic below
+
+# Additional demographic-specific review tasks
+young_adult_review_task:
+  description: >
+    Review the campaign content from the perspective of a young adult demographic.
+    Focus on appeal, relatability, and clarity of messaging for this age group.
+  expected_output: >
+    A feedback summary highlighting aspects relevant to young adults, including Content Appeal,
+    Messaging Clarity, and engagement factors. Provide specific examples.
+  agent: young_adult_reviewer
+
+senior_review_task:
+  description: >
+    Review the campaign content from the perspective of the senior demographic.
+    Focus on clarity, accessibility, and cultural relevance.
+  expected_output: >
+    A feedback summary with insights specific to senior viewers, emphasizing Cultural Sensitivity,
+    Messaging Clarity, and overall accessibility. Include suggestions for improvement if needed.
+  agent: senior_reviewer
+
+international_review_task:
+  description: >
+    Evaluate the campaign from an international audience's perspective, considering cultural fit and
+    relevance across diverse regions.
+  expected_output: >
+    A feedback summary with insights on cultural alignment, appeal to international audiences, and
+    any potential cultural missteps. Provide feedback on language and messaging clarity.
+  agent: international_reviewer
+
+middle_income_review_task:
+  description: >
+    Review the campaign from the perspective of middle-income individuals, assessing affordability,
+    accessibility, and relevance.
+  expected_output: >
+    A feedback summary with insights on how the campaign resonates with middle-income individuals,
+    including appeal, affordability, and perceived value. Offer suggestions on improving accessibility.
+  agent: middle_income_reviewer
+
+diverse_background_review_task:
+  description: >
+    Evaluate the campaign for inclusivity and relatability, especially for people from diverse
+    backgrounds.
+  expected_output: >
+    A feedback summary that highlights inclusivity, representation, and relevance to a wide audience.
+    Assess if the campaign’s messaging aligns with values of diversity and inclusivity.
+  agent: diverse_background_reviewer
